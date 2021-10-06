@@ -9,7 +9,7 @@ import java.util.*;
 public class TypingMinigame extends Minigame{
 
     private static final int NRAND_WORDS = 5,NWORDS = 100;
-    private static final String FILE_NAME ="100WordsMinigame.txt";
+    private static final String FILE_NAME ="dependencies//100WordsMinigame.txt";
     private ArrayList<String> Words;
     private int nCharsInWords;
     private boolean firstQuestion = true;
@@ -66,7 +66,7 @@ public class TypingMinigame extends Minigame{
                     in.close();
             }catch(IOException e){
                 Words.clear();
-                e.getMessage();
+                e.printStackTrace();
             }
         }
 
@@ -81,7 +81,7 @@ public class TypingMinigame extends Minigame{
 
     public String GetQuestion(){
 
-        if(nAnswer == 0 && firstQuestion == true){
+        if(nAnswer == 0 && firstQuestion){
 
             StartWritingTime();
             getNRandomWordsFromFile();
