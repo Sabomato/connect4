@@ -5,15 +5,15 @@ import game.logic.FourInLineObservable;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-import static game.ui.graphic.ConstantsGUI.*;
-import static javafx.application.Application.launch;
+
+import static game.ui.graphic.ConstantsGUI.SCENE_HEIGHT;
+import static game.ui.graphic.ConstantsGUI.SCENE_WIDTH;
 
 public class MainGUI extends Application {
 
 @Override
-    public void start(Stage primaryStage)throws Exception {
+    public void start(Stage primaryStage) {
 
         FourInLineObservable fourInLineObservable = new FourInLineObservable();
         RootPane root = new RootPane(fourInLineObservable);

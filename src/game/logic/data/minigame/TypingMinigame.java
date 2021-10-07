@@ -19,13 +19,6 @@ public class TypingMinigame extends Minigame{
         Words = new ArrayList<>(NRAND_WORDS);
     }
 
-    /*
-        protected void IniciateGame()throws IOException {
-            StartWritingTime();
-            get5RandomWordsFromFile();
-        }
-    */
-
     private void getNRandomWordsFromFile()  {
         Words.clear();
 

@@ -3,11 +3,12 @@ package game.ui.graphic;
 
 import game.ui.graphic.resources.ImageLoader;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.StrokeType;
+
 
 
 import static game.ui.graphic.ConstantsGUI.PLAYER_TYPE_SELECT_SIZE;
@@ -20,7 +21,10 @@ public class PlayerSelectSelection extends HBox {
     public PlayerSelectSelection(String ImageName, String text) {
 
         setMaxWidth(WIDTH_PLAYER_SELECTION_HBOX);
-        image  = new Rectangle(PLAYER_TYPE_SELECT_SIZE,PLAYER_TYPE_SELECT_SIZE,new ImagePattern(ImageLoader.getImage(ImageName)));
+
+        Image aux = ImageLoader.getImage(ImageName);
+        if(aux != null)
+            image  = new Rectangle(PLAYER_TYPE_SELECT_SIZE,PLAYER_TYPE_SELECT_SIZE,new ImagePattern(aux));
         if(text != null)
             textLabel = new Label(text);
         getChildren().addAll(image,textLabel);

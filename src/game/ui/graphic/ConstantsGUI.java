@@ -14,7 +14,6 @@ public class ConstantsGUI {
 
     public final static double SCENE_HEIGHT = screenDim.getHeight() * 0.5;
     public final static double SCENE_WIDTH = screenDim.getWidth() * 0.5;
-    public final static double GRID_HEIGHT = SCENE_HEIGHT * 0.80;
     public final static double GRID_WIDTH = SCENE_WIDTH * 0.7,
     GRID_GAPS = SCENE_WIDTH * 0.01;
     public final static double PIECE_RADIUS = GRID_WIDTH * 0.055;

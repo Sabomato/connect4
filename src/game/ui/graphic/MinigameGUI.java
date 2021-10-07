@@ -55,8 +55,7 @@ public class MinigameGUI {
     }
 
     private void getQuestion() {
-       // if( situations != Situations.PLAY_MINIGAME )
-          //  return;
+
         MinigameAns minigameAns = fourInLineObservable.getMinigameAnswer();
 
         if(minigameAns!= null)
@@ -94,7 +93,7 @@ public class MinigameGUI {
         if( situations != Situations.PLAY_MINIGAME )
             return;
 
-        if(wantsToPlay.showAndWait().get() == yes ) {
+        if(wantsToPlay.showAndWait().isPresent() && wantsToPlay.showAndWait().get() == yes ) {
             fourInLineObservable.isGoingToPlayMinigame(true);
             showInfo();
             getQuestion();
