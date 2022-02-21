@@ -2,6 +2,7 @@
 
 ## Overview
 
+This project was made in the context of the "Advanced Programming" subject, computer engineering course, in [ISEC](https://www.isec.pt/PT/Default.aspx).  
 The purpose of this project is to learn and apply concepts of software development, such as object-oriented programming; state machines; graphical user interface, using **JavaFX**; **observer-observable pattern** and the nuances of Java.  
 The game is also has a text interface.
 
