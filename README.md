@@ -12,7 +12,10 @@ The _pc vs pc_ and _replay_ features are only available in text interface
 ## Usage
 
 1. Download the repository as **.zip**
-2. Open it in your prefered **IDE** (with Maven Projects support)
+2. Open it in your prefered **IDE** (with Maven projects support)
 3. Build the **Maven** project 
-4. Run the `javafx:run` goal from javafx-maven-plugin to execute it
-  
+4. Run game  
+    1. with **Graphical Interface**
+        1. Run the `javafx:run` goal from **javafx-maven-plugin** to execute it
+    2. with **Text Interface**
+        1. Run the project with the main class in the file **src/main/java/game/ui/text/Main.java**
